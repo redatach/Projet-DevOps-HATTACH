@@ -4,30 +4,30 @@ node {
     }
     
     stage("Test") {
-        echo "✅ Projet DevOps REDA EL HATTACH"
-        echo "✅ Application ASP.NET fonctionnelle"
-        echo "✅ Docker et Jenkins operationnels"
-        echo "✅ GitHub: https://github.com/redatach/Projet-DevOps-HATTACH"
+        echo "[SUCCESS] Projet DevOps REDA EL HATTACH"
+        echo "[SUCCESS] Application ASP.NET fonctionnelle"
+        echo "[SUCCESS] Docker et Jenkins operationnels"
+        echo "[SUCCESS] GitHub: https://github.com/redatach/Projet-DevOps-HATTACH"
     }
     
     stage("Build") {
-        echo "✅ Compilation ASP.NET simulée"
-        echo "✅ Build réussi"
+        echo "[SUCCESS] Compilation ASP.NET simul?e"
+        echo "[SUCCESS] Build r?ussi"
     }
     
     stage("Deploy") {
-        echo "✅ DEPLOYMENT SIMULÉ"
-        echo "✅ En production: déploiement Docker sur http://localhost:8081"
-        echo "✅ Application locale fonctionnelle via Docker Desktop"
+        echo "[SUCCESS] DEPLOYMENT SIMULE"
+        echo "[SUCCESS] En production: d?ploiement Docker sur http://localhost:8081"
+        echo "[SUCCESS] Application locale fonctionnelle via Docker Desktop"
     }
     
     stage("Archive") {
-        echo "✅ Archivage des artefacts"
-        echo "✅ Fichiers .dll, Dockerfile, Jenkinsfile"
+        echo "[SUCCESS] Archivage des artefacts"
+        echo "[SUCCESS] Fichiers .dll, Dockerfile, Jenkinsfile"
     }
     
     stage("Notification") {
-        echo "🎉 PIPELINE RÉUSSI !"
-        echo "📊 Toutes les étapes exécutées avec succès"
+        echo "[SUCCESS] PIPELINE REUSSI !"
+        echo "[SUCCESS] Toutes les ?tapes ex?cut?es avec succ?s"
     }
 }
