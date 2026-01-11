@@ -1,0 +1,29 @@
+﻿name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, dev ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '8.0.x'
+        
+    - name: Restore dependencies
+      run: dotnet restore ./src/ProjetDevOps/ProjetDevOps.csproj
+      
+    - name: Build
+      run: dotnet build ./src/ProjetDevOps/ProjetDevOps.csproj --no-restore
+      
+    - name: Test
+      run: echo "Tests simulés - En production: dotnet test"
